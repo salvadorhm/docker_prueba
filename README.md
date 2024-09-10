@@ -42,3 +42,13 @@ En este ejemplo se instala [web.py](https://webpy.org/), se utiliza el código d
 $ python3 app.py
 ````
 
+## 6. Actualizar el repositorio
+
+Después de verificar que funciona la aplicación web se generá un commit y se actualiza el repositorio en la rama main.
+
+````bash
+git add .
+git commit -m "CREATED hola mundo"
+git push -u origin main
+`````
+
