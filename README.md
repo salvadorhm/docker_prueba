@@ -50,5 +50,22 @@ Después de verificar que funciona la aplicación web se generá un commit y se 
 git add .
 git commit -m "CREATED hola mundo"
 git push -u origin main
-`````
+````
 
+## 7. Iniciar sesión en DockerHub
+
+````bash
+$ docker login
+````
+
+## 8. Configurar la imagen con el nombre de usuario
+
+````bash
+$ docker tag salvador:v1 salvadorhm/salvador:latest
+````
+
+## 9. Subir la imagnen a DockerHub
+
+````bash
+$ docker image push salvadorhm/salvador:latest
+````
