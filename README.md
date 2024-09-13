@@ -69,3 +69,9 @@ $ docker tag salvador:v1 salvadorhm/salvador:latest
 ````bash
 $ docker image push salvadorhm/salvador:latest
 ````
+
+## 10. Unittest a la webapp
+
+````bash
+$ python3 -m unittest test_web.py
+````
