@@ -115,3 +115,16 @@ docker run -it -p 8080:8080 image:tag
 ````bash
 docker start -i container
 ````
+
+### 11. 6 Crear un contenedor con un volumen
+
+````bash
+docker run -it -p 8080:8080 --volume /workspace/docker_prueba/Docker01/webapp/templates:/home/webapp/templates/ volumenes:v1
+````
+
+
+### 11.7 Crear un contenedor con un volumen usando pwd
+
+````bash
+docker run -it -p 8080:8080 --v ${pwd}/webapp/templates:/home/webapp/templates/ volumenes:v1
+````
